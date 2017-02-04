@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditorialViewController">
+            <connections>
+                <outlet property="imageView" destination="FYH-jF-BP5" id="muh-sl-EPy"/>
+                <outlet property="textSize" destination="3T9-21-U4S" id="znD-p6-e81"/>
+                <outlet property="textView" destination="wGN-CG-XFl" id="LAC-wl-vP0"/>
+                <outlet property="view" destination="arO-LN-Es3" id="Dmd-fB-HMR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="arO-LN-Es3">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iB9-z5-pG8">
+                    <rect key="frame" x="15" y="25" width="34" height="30"/>
+                    <state key="normal" title="Back">
+                        <color key="titleColor" red="0.058823529411764705" green="0.19607843137254902" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="pushMyNewViewController:" destination="-1" eventType="touchDown" id="Mqj-EH-Pb6"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="wGN-CG-XFl">
+                    <rect key="frame" x="0.0" y="264" width="414" height="432"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Vl-tm-EWu">
+                    <rect key="frame" x="6" y="698" width="59" height="30"/>
+                    <state key="normal" title="Previous">
+                        <color key="titleColor" red="0.058823529411764705" green="0.19607843137254902" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="previousArticle:" destination="-1" eventType="touchDown" id="wve-vF-sYg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rka-ef-JVa">
+                    <rect key="frame" x="360" y="698" width="32" height="30"/>
+                    <state key="normal" title="Next">
+                        <color key="titleColor" red="0.058823529411764705" green="0.19607843137254902" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="nextArticle:" destination="-1" eventType="touchDown" id="coF-xw-jYo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3T9-21-U4S">
+                    <rect key="frame" x="376" y="25" width="30" height="30"/>
+                    <state key="normal" title="aA">
+                        <color key="titleColor" red="0.058823529411764705" green="0.19607843137254902" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="changeTheFontSize:" destination="-1" eventType="touchDown" id="mMk-ZT-BFK"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FYH-jF-BP5">
+                    <rect key="frame" x="0.0" y="67" width="414" height="184"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="FYH-jF-BP5" firstAttribute="top" secondItem="arO-LN-Es3" secondAttribute="top" constant="67" id="42r-gb-p7S"/>
+                <constraint firstItem="wGN-CG-XFl" firstAttribute="width" secondItem="arO-LN-Es3" secondAttribute="width" id="7Pb-DD-c9s"/>
+                <constraint firstItem="0Vl-tm-EWu" firstAttribute="leading" secondItem="arO-LN-Es3" secondAttribute="leading" constant="6" id="8WV-PW-eas"/>
+                <constraint firstItem="FYH-jF-BP5" firstAttribute="height" secondItem="arO-LN-Es3" secondAttribute="height" multiplier="1/4" id="B2d-w8-lHK"/>
+                <constraint firstItem="iB9-z5-pG8" firstAttribute="top" secondItem="arO-LN-Es3" secondAttribute="top" constant="25" id="BF9-wG-GBF"/>
+                <constraint firstAttribute="trailing" secondItem="rka-ef-JVa" secondAttribute="trailing" constant="22" id="CBH-wu-KNc"/>
+                <constraint firstItem="FYH-jF-BP5" firstAttribute="width" secondItem="arO-LN-Es3" secondAttribute="width" id="IUo-Vr-cni"/>
+                <constraint firstItem="iB9-z5-pG8" firstAttribute="leading" secondItem="arO-LN-Es3" secondAttribute="leading" constant="15" id="Jf0-5i-IVh"/>
+                <constraint firstItem="wGN-CG-XFl" firstAttribute="centerX" secondItem="arO-LN-Es3" secondAttribute="centerX" id="MSs-dO-OKj"/>
+                <constraint firstItem="wGN-CG-XFl" firstAttribute="top" secondItem="FYH-jF-BP5" secondAttribute="bottom" constant="13" id="Tzh-4Q-Mvq"/>
+                <constraint firstItem="3T9-21-U4S" firstAttribute="top" secondItem="arO-LN-Es3" secondAttribute="top" constant="25" id="Wdh-GO-IpQ"/>
+                <constraint firstAttribute="bottom" secondItem="wGN-CG-XFl" secondAttribute="bottom" constant="40" id="Yi5-Of-9Ly"/>
+                <constraint firstAttribute="bottom" secondItem="rka-ef-JVa" secondAttribute="bottom" constant="8" id="k6l-dU-RIu"/>
+                <constraint firstAttribute="trailing" secondItem="3T9-21-U4S" secondAttribute="trailing" constant="8" id="kaW-Xr-3cH"/>
+                <constraint firstItem="FYH-jF-BP5" firstAttribute="centerX" secondItem="arO-LN-Es3" secondAttribute="centerX" id="qze-3F-aY5"/>
+                <constraint firstAttribute="bottom" secondItem="0Vl-tm-EWu" secondAttribute="bottom" constant="8" id="sjE-N9-NGr"/>
+            </constraints>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+            <point key="canvasLocation" x="377" y="291"/>
+        </view>
+    </objects>
+</document>

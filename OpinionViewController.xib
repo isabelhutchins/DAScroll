@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OpinionViewController">
+            <connections>
+                <outlet property="imageView" destination="n4M-cu-ZQ6" id="Kuf-kG-EKi"/>
+                <outlet property="textSize" destination="LPy-Yc-Rp0" id="by4-tq-WUC"/>
+                <outlet property="textView" destination="Mdi-yb-Sl0" id="Lhh-Xt-bkJ"/>
+                <outlet property="view" destination="Du2-bc-U88" id="vlW-Pm-m1D"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Du2-bc-U88">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8z-5P-XYa">
+                    <rect key="frame" x="15" y="25" width="34" height="30"/>
+                    <state key="normal" title="Back">
+                        <color key="titleColor" red="0.058823529411764705" green="0.19607843137254902" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="pushMyNewViewController:" destination="-1" eventType="touchDown" id="cYK-Gc-0Pp"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Mdi-yb-Sl0">
+                    <rect key="frame" x="0.0" y="264" width="414" height="432"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEZ-1N-DBW">
+                    <rect key="frame" x="6" y="698" width="59" height="30"/>
+                    <state key="normal" title="Previous">
+                        <color key="titleColor" red="0.058823529411764705" green="0.19607843137254902" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="previousArticle:" destination="-1" eventType="touchDown" id="3JY-qX-mR7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ne1-TK-Oqf">
+                    <rect key="frame" x="360" y="698" width="32" height="30"/>
+                    <state key="normal" title="Next">
+                        <color key="titleColor" red="0.058823529411764705" green="0.19607843137254902" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="nextArticle:" destination="-1" eventType="touchDown" id="Ml5-5n-oKr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPy-Yc-Rp0">
+                    <rect key="frame" x="376" y="25" width="30" height="30"/>
+                    <state key="normal" title="aA">
+                        <color key="titleColor" red="0.058823529411764705" green="0.19607843137254902" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="changeTheFontSize:" destination="-1" eventType="touchDown" id="8h8-sR-PdT"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n4M-cu-ZQ6">
+                    <rect key="frame" x="0.0" y="67" width="414" height="184"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="LPy-Yc-Rp0" firstAttribute="top" secondItem="Du2-bc-U88" secondAttribute="top" constant="25" id="BbI-Te-Zad"/>
+                <constraint firstAttribute="trailing" secondItem="LPy-Yc-Rp0" secondAttribute="trailing" constant="8" id="Ntk-RD-CQD"/>
+                <constraint firstItem="n4M-cu-ZQ6" firstAttribute="centerX" secondItem="Du2-bc-U88" secondAttribute="centerX" id="OSH-fF-gxe"/>
+                <constraint firstAttribute="bottom" secondItem="Mdi-yb-Sl0" secondAttribute="bottom" constant="40" id="QgT-up-e37"/>
+                <constraint firstItem="Mdi-yb-Sl0" firstAttribute="centerX" secondItem="Du2-bc-U88" secondAttribute="centerX" id="ZbH-7q-79n"/>
+                <constraint firstAttribute="trailing" secondItem="Ne1-TK-Oqf" secondAttribute="trailing" constant="22" id="h4l-Q7-TyT"/>
+                <constraint firstItem="n4M-cu-ZQ6" firstAttribute="width" secondItem="Du2-bc-U88" secondAttribute="width" id="hU6-E2-DIz"/>
+                <constraint firstItem="aEZ-1N-DBW" firstAttribute="leading" secondItem="Du2-bc-U88" secondAttribute="leading" constant="6" id="hog-VQ-nDX"/>
+                <constraint firstItem="Mdi-yb-Sl0" firstAttribute="width" secondItem="Du2-bc-U88" secondAttribute="width" id="lnM-UJ-aVn"/>
+                <constraint firstAttribute="bottom" secondItem="aEZ-1N-DBW" secondAttribute="bottom" constant="8" id="ltg-0T-AOO"/>
+                <constraint firstItem="P8z-5P-XYa" firstAttribute="top" secondItem="Du2-bc-U88" secondAttribute="top" constant="25" id="m1h-g1-wSq"/>
+                <constraint firstItem="n4M-cu-ZQ6" firstAttribute="top" secondItem="Du2-bc-U88" secondAttribute="top" constant="67" id="r1H-e8-2Lg"/>
+                <constraint firstItem="n4M-cu-ZQ6" firstAttribute="height" secondItem="Du2-bc-U88" secondAttribute="height" multiplier="1/4" id="siY-dk-B51"/>
+                <constraint firstAttribute="bottom" secondItem="Ne1-TK-Oqf" secondAttribute="bottom" constant="8" id="twb-aT-eXW"/>
+                <constraint firstItem="P8z-5P-XYa" firstAttribute="leading" secondItem="Du2-bc-U88" secondAttribute="leading" constant="15" id="vtV-Ii-6YH"/>
+                <constraint firstItem="Mdi-yb-Sl0" firstAttribute="top" secondItem="n4M-cu-ZQ6" secondAttribute="bottom" constant="13" id="xvw-tm-YaA"/>
+            </constraints>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+            <point key="canvasLocation" x="377" y="291"/>
+        </view>
+    </objects>
+</document>
